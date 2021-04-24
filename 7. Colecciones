@@ -1,0 +1,49 @@
+Colecciones
+Los datos se organizan en coleciones.
+
+Cada colección tiene identificadores, valores que no se repiten y de los cuales se cuelgan documentos.
+
+Cada documento tiene propiedades, cada una de las cuales consta de un nombre y un valor.
+
+Ejemplo de datos en Firestore
+{
+  Alumno: {
+    "oipooipo": {
+      nombre: "pp"
+      dirección: "su casa"
+    },
+    "lkjlkjjl": {
+      nombre: "qk"
+      dirección: "mi casa"
+    },
+    "zlxvcxvv": {
+      nombre: "bb"
+      dirección: "otra casa"
+    }
+  },
+  Carrera: {
+    "fghfhgfh": {
+      nombre: "Progra"
+    },
+    "werewrr": {
+      nombre: "Merca"
+    }
+  }
+  Grupo: {
+    "IC-51M": {
+      carrera: "fghfhgfh".
+      alumnos: [
+        "oipooipo",
+        "lkjlkjjl"
+      ]
+    },
+    "MN-11V": {
+      carrera: "werewrr".
+      alumnos: [
+        "zlxvcxvv"
+      ]
+    }
+  }
+}
+Obtener la referencia a una colección
+const refCol = firestore.collection("Alumno");

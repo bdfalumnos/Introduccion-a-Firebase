@@ -1,0 +1,3 @@
+Referencias a archivos
+Obtener referencia a archivos
+const refArch = storage.ref(nombre);

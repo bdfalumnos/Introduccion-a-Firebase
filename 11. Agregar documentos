@@ -1,0 +1,15 @@
+Agregar documentos
+Agregar documento generando id
+const data = {
+  nombre: "pp",
+  dirección: "su casa"
+};
+const refNuevoDoc = await refCol.add(data);
+console.log(refNuevoDoc.id);
+Agregar documento cuando se conoce el id
+const id ="lkjlkjjl";
+const data = {
+  nombre: "qk"
+  dirección: "mi casa"
+};
+await refCol.doc(id).set(data);

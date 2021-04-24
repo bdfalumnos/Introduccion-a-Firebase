@@ -1,0 +1,40 @@
+Snapshot de colecciones
+Consultas que se actualizan automáticamente cada que hay un cambio.
+
+Ejemplo sencillo
+refCol.onSnapshot(
+  snapshot => {
+    console.log(snapshot.size);
+    snapshot.forEach(document => {
+      console.log(document.id);
+      const datos = document.data();
+      console.log(datos);
+    })
+  },
+  error => console.error(error));
+Ejemplo ordenado
+refCol.
+  orderBy("nombre", "asc").
+  onSnapshot(
+  snapshot => {
+    console.log(snapshot.size);
+    snapshot.forEach(document => {
+      console.log(document.id);
+      const datos = document.data();
+      console.log(datos);
+    })
+  },
+  error => console.error(error));
+Ejemplo descendente
+refCol.
+  orderBy("nombre", "desc").
+  onSnapshot(
+  snapshot => {
+    console.log(snapshot.size);
+    snapshot.forEach(document => {
+      console.log(document.id);
+      const datos = document.data();
+      console.log(datos);
+    })
+  },
+  error => console.error(error));

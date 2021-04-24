@@ -1,0 +1,7 @@
+Google auth provider
+La clase firebase.auth.GoogleAuthProvider se conecta al sistema de autenticación Google.
+
+Creación de una instancia
+const p = new firebase.auth.GoogleAuthProvider();
+Configuración para seleccionar entre una lista de usuarios
+p.setCustomParameters({ prompt: "select_account" });

@@ -1,0 +1,15 @@
+Snapshot de documentos
+Consultas que se actualizan automáticamente cada que hay un cambio.
+
+Ejemplo
+refDoc.onSnapshot(
+  document => {
+    if (document.exists) {
+      console.log(document.id);
+      const datos = document.data();
+      console.log(datos);
+    } else {
+      console.log("No encontrado.");
+    }
+  },
+  error => console.error(error));

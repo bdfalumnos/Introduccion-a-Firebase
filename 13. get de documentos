@@ -1,0 +1,12 @@
+get de documentos
+Consultas que no se actualizan automáticamente cada que hay un cambio.
+
+Ejemplo sencillo
+const document = await refDoc.get();
+if (document.exists) {
+  console.log(document.id);
+  const datos = document.data();
+  console.log(datos);
+} else {
+  console.log("No encontrado.");
+}

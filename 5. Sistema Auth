@@ -1,0 +1,35 @@
+Sistema Auth
+La clase firebase.auth.Auth se conecta al sistema de autenticación de Firebase.
+
+Obtener la instancia
+const auth = firebase.auth();
+Iniciar sesión con un AuthProvider
+await auth.signInWithRedirect(provider);
+Salta a la página de autenticación del proveedor y cuando entra a sesión termina.
+
+Terminar sesión
+await auth.signOut();
+Escuchar notificaciones cuando hay un cambio de usuario
+auth.onAuthStateChanged(fnUsuario, fnError);
+donde:
+
+fnUsuario
+Es una función invocada cuando cambia el usuario en sesión y recibe como parámetro la referencia a un objeto. Si la sesión está cerrada, la referencia vale null. Si se ha iniciado sesión, la referencia apunta a un objeto con las siguientes propiedades:
+
+email
+Referencia al email del usuario. Si el usuario es anónimo, vale null.
+
+displayName
+Nombre del usuario.
+
+photoURL
+URL de la imagen del usuario.
+
+fnError
+Es una función invocada cuando se presenta un error y recibe como parámetro la referencia a una excepción.
+
+Ejemplo:
+
+auth.onAuthStateChanged(
+  usuario => console.log(usuario),
+  error => console.error(error));

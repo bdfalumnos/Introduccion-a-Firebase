@@ -1,0 +1,7 @@
+Sistema Storage
+La clase firebase.storage.Storage se conecta al sistema Storage, que sirve para almacenar archivos, en especial multimedia.
+
+Cada archivo tiene un nombre y contenido en bytes.
+
+Obtener la instancia
+const storage = firebase.storage();

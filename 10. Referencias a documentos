@@ -1,0 +1,3 @@
+Referencias a documentos
+Obtener referencia a documento
+const refDoc = refCol.doc(id);

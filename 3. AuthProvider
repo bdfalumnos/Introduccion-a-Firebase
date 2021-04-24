@@ -1,0 +1,13 @@
+AuthProvider
+Para ser flexible, se utilizan proveedores de autenticación, también conocidos como AuthProvier que se adaptan a sistemas de seguridad existentes; a continuación se muestran algunos de estos, junto a su tipo en Firebase para JavaScript:
+
+Email y contraseña
+firebase.auth.EmailAuthProvider
+Google
+firebase.auth.GoogleAuthProvider
+Facebook
+firebase.auth.FacebookAuthProvider
+Sistemas de OAuth, como Microsoft
+firebase.auth.OAuthProvider
+En este enlace está la referencia.
+https://firebase.google.com/docs/reference/js/firebase.auth.AuthProvider

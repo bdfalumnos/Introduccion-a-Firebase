@@ -1,0 +1,5 @@
+Sistema Firestore
+La clase firebase.firestore.Firestore se conecta al sistema Firestore, que es una base de datos de tiempo real de Firebase.
+
+Obtener la instancia
+const firestore = firebase.firestore();

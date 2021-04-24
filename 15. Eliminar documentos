@@ -1,0 +1,2 @@
+Eliminar documentos
+await refDoc.delete();

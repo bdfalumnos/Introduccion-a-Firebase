@@ -1,0 +1,6 @@
+Modificar documentos
+const data = {
+  nombre: "pp pp",
+  dirección: "su casita"
+};
+await refDoc.set(data);

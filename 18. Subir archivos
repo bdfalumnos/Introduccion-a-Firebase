@@ -1,0 +1,6 @@
+Subir archivos
+La misma instrucción sirve para agregar o modificar el archivo.
+
+Los archivos pueden ser de tipo File
+
+await refArch.put(archivo);
